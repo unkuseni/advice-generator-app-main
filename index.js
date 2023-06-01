@@ -1,4 +1,5 @@
-const body = document.querySelector("advice-body");
-const card = document.querySelector("advice-card");
-//  Add a class to the card element
-card.
+//  Get the element with the class name "card"
+const card = document.querySelector("card");
+const svgContainer = document.querySelector("#svg-div");
+// add a background color to the svg container
+svgContainer.style.backgroundColor = "red";
