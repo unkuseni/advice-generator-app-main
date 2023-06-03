@@ -1,38 +1,17 @@
-<<<<<<< HEAD
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
-:root {
-  font-family: 'Manrope', sans-serif;
-=======
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
->>>>>>> 750cb3d9f3e67485c49f9d5791b4d92ba64c7735
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-<<<<<<< HEAD
-  color: #fff;
-=======
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
->>>>>>> 750cb3d9f3e67485c49f9d5791b4d92ba64c7735
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-<<<<<<< HEAD
-  --Light-Cyan: hsl(193, 38%, 86%);
-  --Neon-Green: hsl(150, 100%, 66%);
-  --Grayish-Blue: hsl(217, 19%, 38%);
-  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
-  --Dark-Blue: hsl(218, 23%, 16%);
-  background-color: var(--Dark-Grayish-Blue);
-=======
->>>>>>> 750cb3d9f3e67485c49f9d5791b4d92ba64c7735
 }
 
 a {
@@ -40,10 +19,6 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 750cb3d9f3e67485c49f9d5791b4d92ba64c7735
 a:hover {
   color: #535bf2;
 }
@@ -54,10 +29,6 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-<<<<<<< HEAD
-  background-color: var(--Dark-Grayish-Blue);
-=======
->>>>>>> 750cb3d9f3e67485c49f9d5791b4d92ba64c7735
 }
 
 h1 {
@@ -72,27 +43,6 @@ h1 {
   text-align: center;
 }
 
-<<<<<<< HEAD
-header {
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-}
-
-blockquote {
-  font-size: 28px;
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
-
-=======
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -132,24 +82,12 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
->>>>>>> 750cb3d9f3e67485c49f9d5791b4d92ba64c7735
 
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
   }
-<<<<<<< HEAD
-
-  a:hover {
-    color: #747bff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
-}
-=======
   a:hover {
     color: #747bff;
   }
@@ -157,4 +95,3 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
->>>>>>> 750cb3d9f3e67485c49f9d5791b4d92ba64c7735
