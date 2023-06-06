@@ -1,8 +1,12 @@
-const generateAdvice = () => {
-  fetch('https://ron-swanson-quotes.herokuapp.com/v2/quotes')
-  .then(response => response.json())
-  .then(data => console.log(data[0]))
-  .catch(error => console.error(error));
+/**
+ * Generates a Ron Swanson quote from an API.
+ * 
+ * @returns A Promise that resolves to a string with the quote.
+ */
+const generateAdvice = async (): Promise<string> => {
+  const response = await fetch('https://ron-swanson-quotes.herokuapp.com/v2/quotes');
+  const data = await response.json();
+  return data[0];
 };
 let button = document.getElementById("generate");
 if (button) {
