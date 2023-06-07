@@ -1,6 +1,7 @@
 const card = document.getElementById('app');
 const header = document.getElementById('header');
 const quote = document.getElementById('quote');
+let button = document.getElementById("generate");
 /**
  * Generates a Ron Swanson quote from an API.
  * 
@@ -9,7 +10,6 @@ const quote = document.getElementById('quote');
 const generateAdvice = async (): Promise<string> => {
   const response = await fetch('https://ron-swanson-quotes.herokuapp.com/v2/quotes');
   const data = await response.json();
-  console.log(data[0]);
   return data[0];
 };
 /**
@@ -18,10 +18,28 @@ const generateAdvice = async (): Promise<string> => {
 const generateFigure = (): string => {
   let random = Math.floor(Math.random() * 1000) + 1;
   let figure = `#${random.toString().padStart(3, "0")}`;
-  console.log(figure);
   return figure;
 }
-let button = document.getElementById("generate");
+/**
+ * Generates a quote and a figure when the page loads.
+ *
+ * @param None
+ * @return None
+ */
+const generateQuoteOnLoad = async () => {
+  const figure = generateFigure();
+  await generateAdvice().then((advice) => {
+    if (quote) {
+      quote.textContent = `"${advice}"`;
+    }
+    if (header) {
+      header.textContent = "Advice" + " " + `${figure}`;
+    }
+  });
+}
+
+window.onload = generateQuoteOnLoad;
+
 if (button) {
   button.onclick = async () => {
     const advice = await generateAdvice();
@@ -30,7 +48,7 @@ if (button) {
       header.textContent = "Advice" + " " + `${figure}`;
     }
     if (quote) {
-      quote.textContent = `${advice}`;
+      quote.textContent = `"${advice}"`;
     }
   };
 };
